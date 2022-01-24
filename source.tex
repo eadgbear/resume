@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Wilmer Gonzalez
+% Author : Scott Lyons
 % Based on: Sourabh Bajaj repo
 % License : MIT
 %------------------------
@@ -91,8 +91,8 @@
 % For Light theme un-comment this and comment the Dark theme section below
 \colorlet{textcolor}{black}
 \colorlet{urlcolor}{blue}
-\newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{ Dark \color{urlcolor}{\faicon{lightbulb-o}}}}
-\newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
+\newcommand{\otherThemeRef}{\href{https://github.com/slyons/resume/raw/master/scott_lyons_dark.pdf}{ Dark \color{urlcolor}{\faicon{lightbulb-o}}}}
+\newcommand{\latestVersion}{\href{https://github.com/slyons/resume/raw/master/scott_lyons_light.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
 
 \begin{document}
 % ---
@@ -102,8 +102,8 @@
 % \colorlet{backgroundcolor}{black!30!gray}
 % \colorlet{urlcolor}{blue!25!white}
 % \AtBeginDocument{\color{textcolor}}
-% \newcommand{\otherThemeRef}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_light.pdf}{Light \color{urlcolor}{\faicon{lightbulb-o}}}}
-% \newcommand{\latestVersion}{\href{https://github.com/wilmeragsgh/resume/raw/master/wilmer_gonzalez_dark.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
+% \newcommand{\otherThemeRef}{\href{https://github.com/slyons/resume/raw/master/scott_lyons_light.pdf}{Light \color{urlcolor}{\faicon{lightbulb-o}}}}
+% \newcommand{\latestVersion}{\href{https://github.com/slyons/resume/raw/master/scott_lyons_dark.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
 
 % \begin{document}
 % \pagecolor{backgroundcolor}
@@ -111,10 +111,11 @@
 
 % HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Wilmer A. Gonzalez S.} \href{https://linktr.ee/wilmerags}{\color{urlcolor} \faicon{link}}\\
-  Machine learning engineer & \href{mailto:wilmeragsgm@gmail.com}{\color{urlcolor}{\faicon{envelope}} \color{textcolor} wilmeragsgm} \\
-  \textsl{Caracas, Venezuela.} & \href{https://www.linkedin.com/in/wilmeragslin/}{ \color{urlcolor}{\faicon{linkedin}} \color{textcolor} wilmeragslin} \\
-  \textsl{\small \latestVersion} /\textsl{\small \otherThemeRef} & \href{https://github.com/wilmeragsgh}{  \color{urlcolor}{\faicon{github}} \color{textcolor} wilmeragsgh}\\
+  \textbf{\Large Scott A Lyons} \\
+  Software Engineer 2 / OSS Data Engineer & \href{mailto:scottalyons@gmail.com}{\color{urlcolor}{\faicon{envelope}} \color{textcolor} scottalyons} \\
+  \textsl{Redmond, Washington} & \href{https://www.linkedin.com/in/theslyons/}{ \color{urlcolor}{\faicon{linkedin}} \color{textcolor} theslyons} \\
+  %\textsl{\small \latestVersion} /\textsl{\small \otherThemeRef} & \href{https://github.com/slyons}{  \color{urlcolor}{\faicon{github}} \color{textcolor} slyons}\\
+   & \href{https://github.com/slyons}{  \color{urlcolor}{\faicon{github}} \color{textcolor} slyons}\\
 \end{tabular*}
 % ---
 
@@ -122,121 +123,54 @@
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Quash}{(remote) Caracas, VE}
-      {Machine learning engineer}{March 2021 - Present}
+      {Microsoft - Consumer Software Engineering (CSE)}{Redmond, Washington}
+      {Software Engineer 2}{September 2018 - Present}
       \resumeItemListStart
-      \resumeItem{Technical guide of the Data Science team.}
-      \resumeItem{Improve the adaptability of the scoring API by creating 10+ features engineering stages.}
-      \resumeItem{Deploy personalized ML models for credit scoring, processing 10k+ applications across 5+ countries.}
+      \resumeItem{Member of the Data Tech Domain team}
+      \resumeItem{Responsible for educating customers and field-oriented developers on industry trends related to Big Data.}
+      \resumeItem{Collected feedback from field teams, triaged it and reported it back to Product groups}
+      \resumeItem{Worked closely as part of the Azure Databricks feedback loop to expedite customer issues}
+      \resumeItem{Converted R scripts to SparkR and encapsulated them for execution through Azure Data Factory (H\&M)}
+      \resumeItem{Consulted on best practices for building and deploying ML models for fastest response time scenarios (Energinet)}
+      \resumeItem{Consulted on best practices for handling encrypted files in a Big Data pipeline (Walgreens)}
+      \resumeItem{Consulted on best practices for distributed event handling through Event Grid (AT\&T)}
+      \resumeItem{Served as an emergency consult on scripting and validating HDInsight cluster deployments (Credit Suisse)}
+      \resumeItem{Helped port \href{https://github.com/feast-dev/feast}{Feast}(https://github.com/feast-dev/feast) to run on Azure Databricks}
+      \resumeItem{Did design reviews for large-scale warehousing scenarios (Kroger)}
+      \resumeItem{Worked on the team to build the infrastructure automation for the CSE Kafka on-boarding event}
+      \resumeItem{Wrote benchmarking tools to test CosmosDB's Cassandra offering}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, R, AWS, Sagemaker, REST APIs.}\\
-    %   \resumeTech{Theory}{Machine learning, AutoML, Feature engineering, Project management.}
+      \resumeTech{Technologies}{Python, Azure Databricks, Scala, Spark, Terraform, Docker, Cassandra, Kubernetes, Azure Data Factory, EventHubs, Kafka, Azure Data Lake, Azure HDInsight, Azure CosmosDB}\\
       
     \sepsection
 
     \resumeSubheading
-      {UNDP (UN)}{Caracas, VE}
-      {Machine learning engineer}{August 2019 - Present}
+      {Microsoft - Customer Advisory Team (CAT/DataCAT)}{Redmond, Washington}
+      {Software Engineer 2}{September 2015 - August 2018}
       \resumeItemListStart
-      \resumeItem{Provide summaries from opinions and trends by processing 1.1M tweets with Topic Modeling techniques.}
-      \resumeItem{Detect key actors and information hubs by processing 150k user's data with Network analysis.}
-      \resumeItem{Sped up the analytical workflow by 75\% by redesigning the sampling strategy for jobs.}
+      \resumeItem{Worked as an OSS Data specialist}
+      \resumeItem{Worked with customers to unblock technical issues, provide best practices}
+      \resumeItem{Did design reviews with customers to provide optimal performance for a variety of ETL/OLTP scenarios}
+      \resumeItem{Helped plan and automate data gathering for internal project that lead to key design decisions in ADLS Gen 2}
+      \resumeItem{Worked closely with customer in an adjunct Data Engineer role to bootstrap their data processing pipelines}
+      \resumeItem{Worked closely with EventHubs product group to rewrite Spark drivers for best performance and developer experience}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, R, Bash, Gephi, Power BI, REST APIs, Airflow.}\\
-    %   \resumeTech{Theory}{Topic modeling, Community detection, Network Analysis and NLP, Data visualization, Data engineering}
+      \resumeTech{Technologies}{Python, Scala, Azure Databricks, Hadoop, Yarn, Azure HDInsight, Azure CosmosDB, Kubernetes, EventHubs, Airflow, MongoDB.}\\
     
     \sepsection
 
     \resumeSubheading
-      {Universidad Central de Venezuela}{Caracas, VE}
-      {Adjunct professor (Advanced topics in AI)}{October 2018 - June 2021}
+      {Microsoft - Compute Insights Team}{Redmond, Washington}
+      {Software Engineer}{March 2014 - September 2015}
       \resumeItemListStart
-      \resumeItem{Designed and organized course material and resources for topics described in \href{https://bit.ly/2VYchte}{\textsl{here}}.}
-      \resumeItem{Lectured material for students and grade their assignments.}
-      \resumeItem{Tutored thesis work on AI related to computer vision.}
+      \resumeItem{Built tools to manager and observe Data Science jobs running in COSMOS}
+      \resumeItem{Built data visualization tools based on insights from low-level hardware metrics}
+      \resumeItem{Wrote introductory courses on OSS Big Data concepts, notebooks and Hadoop for my team}
       \resumeItemListEnd
-    \resumeSubSubheading
-      {Teaching assistant (Introduction to Data Science, Data Mining)}{April 2015 - February 2018}
-     \resumeItemListStart
-      \resumeItem{Designed and organized practical course material and resources for topics described in \href{https://bit.ly/2VYchte}{\textsl{here}}.}
-      \resumeItem{Lectured practical material for students and grade their assignments.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Latex, R, Weka, Colab, Jupyter and swirl.}\\
+      \resumeTech{Technologies}{Python, Scala, F\#, C\#, COSMOS, Hadoop, HDInsight, D3.}\\
+
     %   \resumeTech{Theory}{Artificial intelligence, Data science and Data mining.}
 
-    \sepsection
-    
-    \resumeSubheading
-      {Omdena}{(remote) Caracas, VE}
-      {Lead machine learning engineer}{Jan 2021 - Apr 2021}
-      \resumeItemListStart
-      \resumeItem{Helped create a trust score for news articles by implementing a claim detection model.}
-      \resumeItem{Improved usability of the product by creating a chrome extension connected to resultant models.}
-      \resumeItem{Contributed to open-source projects related to NLP and Deep Learning models.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Keras, Tensorflow, Falcon, REST APIs, Javascript.}\\
-    %   \resumeTech{Theory}{NLP, Deep Learning, Web development.}
-
-\newpage
-    \resumeSubheading
-      {Oliver Wyman}{(remote) Caracas, VE}
-      {Data engineer}{July 2020 - November 2020}
-      \resumeItemListStart
-      \resumeItem{Enabled data pipelines processing by provisioning and configuring Airflow.}
-      \resumeItem{Created DAGs for 30+ stored procedures from SQL Server scripts.}
-      \resumeItem{Created DAGs for importing tabular data (1M+ records) to SQL Server.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Airflow, SQL Server, Jenkins, Rancher, Docker, Kubernetes.}\\
-    %   \resumeTech{Theory}{Data pipelines orchestration, ETL, Provisioning.}
-
-    \sepsection
-
-    \resumeSubheading
-      {Quash}{(remote) Caracas, VE}
-      {Machine learning engineer}{February 2019 - March 2020}
-      \resumeItemListStart
-      \resumeItem{Developed a customer facing API for using our internal credit scoring model.}
-      \resumeItem{Increased approval rate by 15\% of customers while keeping the same risk by optimizing state-of-the-art ML models.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, R, S3 and Docker.}\\
-    %   \resumeTech{Theory}{Credit scoring and Hyper-parameter optimization.}
-
-    \sepsection
-
-    \resumeSubheading
-      {Advoqt}{(remote) Caracas, VE}
-      {Machine learning engineer}{February 2019 - August 2019}
-      \resumeItemListStart
-      \resumeItem{Increased security by implementing a Deep Learning model for classifying malicious urls with high accuracy.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Elasticsearch and Spark.}\\
-    %   \resumeTech{Theory}{Deep learning and Text classification.}
-
-    \sepsection
-
-    \resumeSubheading
-      {Fetcher}{Caracas, VE}
-      {Data scientist}{June 2018 - February 2019}
-      \resumeItemListStart
-      \resumeItem{Decreased overload of sourcing teams by 10\% by creating an automated allocation algorithm using Linear programming and Constraint Satisfaction techniques.}
-      \resumeItem{Estimated demand of required candidates for sourcing using daily output data.}
-      \resumeItemListEnd
-      \resumeTech{Technologies}{R, Shiny, Latex, SQL and Metabase.}\\
-    %   \resumeTech{Theory}{Linear programming and Constraint Satisfaction problems.}
-
-%\newpage
-
-    \sepsection
-    
-    \resumeSubheading
-      {Predictvia}{Caracas, VE}
-      {Machine learning engineer}{February 2016 - January 2017}
-     \resumeItemListStart
-     \resumeItem{Performed social network analysis, exploratory data analysis, supervised and unsupervised learning.}
-     \resumeItem{Built and implemented classification models, perform feature engineering, and calibrated existing models.}
-     \resumeItemListEnd
-     \resumeTech{Technologies}{Python, bash.}\\
-    %  \resumeTech{Theory}{Social network analysis, Attribution models and  Recommendation systems.}
     \resumeSubHeadingListEnd
 % ---
 \newpage
@@ -244,15 +178,13 @@
 \section{Technical skills}
   \resumeSubHeadingListStart
   
-  \resumeSubItem{\textbf{Programming languages:} Python, R, Bash, Julia.}
+  \resumeSubItem{\textbf{Programming languages:} Python, Scala, F\#/.NET, JavaScript/Node}
   
-  \resumeSubItem{\textbf{Cloud services:} AWS (Lambda, S3, Sagemaker), GCP (AI Platform), Azure (Blob storage).}
+  \resumeSubItem{\textbf{Cloud services:} Azure, GCP}
   
-  \resumeSubItem{\textbf{Deep learning frameworks:} Keras, Tensorflow.}
+  \resumeSubItem{\textbf{Scripting/Infrastructure:} Terraform, Docker, Kubernetes, Bash, Powershell, Bicep}
   
-  \resumeSubItem{\textbf{Others:} xgboost, scikit, pandas, falcon, flask, fastapi, Docker, Kubernetes, Jenkins, Terraform}
-
-  \resumeSubItem{\textbf{Currently learning:} Transformers models, Vue, Nodejs.}
+  \resumeSubItem{\textbf{Currently learning:} Tensorflow, xgboost, Golang, Typescript}
   
   \resumeSubHeadingListEnd
 
@@ -260,104 +192,16 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Universidad Central de Venezuela}{Caracas, Venezuela}
-      {B.Sc in Computer Science}{Sept. 2012 -- Jun. 2018}
+      {Carleton University}{Ottawa, Ontario, Canada}
+      {B.Sc in Computer Science}{September 2009 - February 2014}
       \resumeItemListStart
-      \resumeItem{Took elective courses on: Introduction to data science, Advanced topics in data science, Artificial Intelligence, Data mining, Text mining, NoSQL databases, Digital image processing.}
-      \resumeItem{(Thesis title) AdaBnn: Binarized Neural Networks trained with adaptive structural learning.}
+      \resumeItem{Served as head of Services for the Computer Science Society}
+      \resumeItem{Deployed OpenStack for students to try out cloud computing}
+      \resumeItem{Worked as a software contractor part-time}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 % ---
-\vspace{1em}
-% \hfill \textsl{ Click on items for details. \color{urlcolor}{\faicon{link}}}
 
-% CERTIFICATIONS
-\section{Certifications \color{urlcolor}{(with links)}}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {@ Udacity/Coursera}{MOOC}
-      {\href{https://www.coursera.org/account/accomplishments/certificate/XN23WJKKJ5HZ}{Introduction to machine learning in production}}{Issued July 2021}
-    
-    % \resumeSubheading
-    %   {Coursera}{MOOC}
-    \resumeSubSubheading
-      {\href{https://graduation.udacity.com/confirm/AWGF3KVQ}{Machine learning engineer nanodegree}}{Issued March 2021}
-    
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/specialization/certificate/WYGXVXA327K9}{Deep learning specialization}}{Issued January 2021}
-    
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/verify/HEURLGHTW46G}{Sequence models}}{Issued January 2021}
-      
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/verify/U59ZPPWP5NRN}{Convolutional neural networks}}{Issued September 2020}
-    
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/verify/BHN34W5WKBUT}{Structuring machine learning projects}}{Issued May 2020} 
-   
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/records/J76SQGG4PVYL}{Improving deep neural networks: Hyperparameter tuning, regularization and optimization}}{Issued May 2020}
-     
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/verify/MBWJ69CVLQAZ}{Neural networks and deep learning}}{Issued May 2020}
-      
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/certificate/MZ7TC7ADV7YY}{R Programming}}{Issued September 2016}
-      
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/certificate/36JC577GBFYD}{Text mining and analytics}}{Issued August 2016}
-     
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/certificate/MDWATFKLPH9Z}{Text retrieval and search engines}}{Issued June 2016}
-     
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/certificate/TM7T8CJXNV6R}{The data scientist's toolbox}}{Issued June 2016}
-     
-    \resumeSubSubheading
-     {\href{https://www.coursera.org/account/accomplishments/certificate/WYGG7TDFPB3F}{Data visualization}}{Issued March 2016}
-  \resumeSubHeadingListEnd
-% ---
-
-%\newpage
-\vspace{1em}
-% PROJECTS
-\section{Personal Projects \color{urlcolor}{(with links)}}
-
-  \resumeSubHeadingListStart
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/philia}{Philia: A Slack bot for empathy assessment in co-workers communications.}}
-    
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/adabnn}{AdaBnn: Binarized Neural Networks trained with adaptive structural learning.}}
-
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/WarmChat}{WarmChat: Chat room web app that classifies insults messages by using several classifiers.}}
-    
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/term_freq_linkedin}{Small tool for generating frequent words analysis on the position names of LinkedIn Connections.}}
-    
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/shinycker}{Template for dockerized shiny (R) application deployment.}}
-    
-    \resumeSubItem{\href{https://github.com/wilmeragsgh/resume}{Latex template for CVs with dark theme, with CV guidelines from google.}}
-    
-  \resumeSubHeadingListEnd
-% ---
-
-\vspace{1em}
-
-% PERSONAL PUBLICATIONS
-\section{Personal publications \color{urlcolor}{(with links)}}
-
-  \resumeSubHeadingListStart
-    \resumeSubItem{\href{http://scivisionpub.com/pdfs/diodes-laser-in-office-endoscopic-surgery-center-for-nasal-obstruction-and-snoring-558.pdf}{Sajidxa Mariño, Jesus Lares, Wilmer Gonzalez. Diode’s Laser in Office Endoscopic Surgery Center for Nasal Obstruction
-and Snoring. J Med - Clin Res \& Rev. 2018; 2(6): 1-3.}}
-
-    \resumeSubItem{\href{https://www.slideshare.net/WilmerGonzalez7/twitter-a-data-source-for-the-academy}{Twitter, A data source for the academy (spanish).}}
-    
-    \resumeSubItem{\href{https://www.slideshare.net/WilmerGonzalez7/github-social-coding-the-social-network-for-programmers}{GitHub \& Social Coding. Social network for programmers (spanish).}}
-    
-    \resumeSubItem{\href{https://www.slideshare.net/WilmerGonzalez7/reproducible-research-a-case-of-study-on-allocation-of-university-places}{Reproducible Research. Case of study: allocation of university places in UCV by OPSU (spanish).}}
-    
-  \resumeSubHeadingListEnd
-% ---
-
-%\hfill \textsl{ Not clickable anymore.}
 
 
 % ---

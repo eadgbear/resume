@@ -11,6 +11,10 @@ A latex template for CVs considering tips from [Create Your Resume for Google: T
 
 * Linux: `curl -sSL https://get.docker.com/ | sh`
 
+**Docker with VS Code:**
+
+Using the [LaTeX Workshop](https://marketplace.visualstudio.com/items?itemName=James-Yu.latex-workshop) extension, enable *Docker* in the extension settings and use `tianon/latex` as the *Docker Image* setting. The first build will take a while as it downloads the image (if it is not available) but the preview mode works like a charm.
+
 ### Web
 
 An [Overleaf](https://www.overleaf.com/) account.
