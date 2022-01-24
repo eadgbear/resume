@@ -14,3 +14,5 @@ Archieve/
 *.cb
 *.cb2
 .*.lb
+source.synctex.gz
+source.fdb_latexmk
