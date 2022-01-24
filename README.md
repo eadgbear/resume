@@ -142,7 +142,9 @@ Some ideas:
 
 ## License
 
-Format is MIT but all the data is owned by Wilmer Gonzalez.
+Forked from [wilmeragsgh/resume](https://github.com/wilmeragsgh/resume), which uses MIT for formatting and data is owned by Wilmer Gonzalez.
+
+All work done after the fork is the work of Scott Lyons
 
 ## Acknowledgments
 
