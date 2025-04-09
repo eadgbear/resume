@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Scott Lyons
+% Author : Ada Lyons
 % Based on: Sourabh Bajaj repo
 % License : MIT
 %------------------------
@@ -91,8 +91,6 @@
 % For Light theme un-comment this and comment the Dark theme section below
 \colorlet{textcolor}{black}
 \colorlet{urlcolor}{blue}
-\newcommand{\otherThemeRef}{\href{https://github.com/slyons/resume/raw/master/scott_lyons_dark.pdf}{ Dark \color{urlcolor}{\faicon{lightbulb-o}}}}
-\newcommand{\latestVersion}{\href{https://github.com/slyons/resume/raw/master/scott_lyons_light.pdf}{Latest \color{urlcolor}{\faicon{refresh}}}}
 
 \begin{document}
 % ---
@@ -111,44 +109,55 @@
 
 % HEADING
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Scott A Lyons} \\
-  Senior Engineer & \href{mailto:scottalyons@gmail.com}{\color{urlcolor}{\faicon{envelope}} \color{textcolor} scottalyons} \\
-  \textsl{Seattle, Washington} & \href{https://www.linkedin.com/in/theslyons/}{ \color{urlcolor}{\faicon{linkedin}} \color{textcolor} theslyons} \\
-  %\textsl{\small \latestVersion} /\textsl{\small \otherThemeRef} & \href{https://github.com/slyons}{  \color{urlcolor}{\faicon{github}} \color{textcolor} slyons}\\
-   & \href{https://github.com/slyons}{  \color{urlcolor}{\faicon{github}} \color{textcolor} slyons}\\
+  \textbf{\Large Ada Lyons} \\
+  Senior Engineer & \href{mailto:ada.g.lyons@gmail.com}{\color{urlcolor}{\faicon{envelope}} \color{textcolor} ada.g.lyons@gmail.com} \\
+  \textsl{Seattle, Washington} & \href{https://www.linkedin.com/in/eadgbear/}{ \color{urlcolor}{\faicon{linkedin}} \color{textcolor} eadgbear} \\
+  %\textsl{\small \latestVersion} /\textsl{\small \otherThemeRef} & \href{https://github.com/eadgbear}{  \color{urlcolor}{\faicon{github}} \color{textcolor} eadgbear}\\
+   & \href{https://github.com/eadgbear}{  \color{urlcolor}{\faicon{github}} \color{textcolor} eadgbear}\\
 \end{tabular*}
 % ---
 
 % EXPERIENCE
 \section{Experience}
   \resumeSubHeadingListStart
-    \resumeSubheading
+
+  \resumeSubheading
+      {Embucket}{Remote}
+      {Senior Engineer}{January 2025 - Current}
+      \resumeItemListStart
+      \resumeItem{Scoped and planned the development of a DataFusion-based product, ensuring alignment with business objectives and technical feasibility.}
+      \resumeItem{Provided technical leadership by contributing to core components of the product, including query optimization and execution planning.}
+      \resumeItem{Mentored team members unfamiliar with Rust, offering workshops, code reviews, and pair programming sessions to accelerate their learning curve.}
+      \resumeItem{Guided the team in understanding and leveraging Apache DataFusion's architecture and APIs for building scalable data processing solutions.}
+      \resumeItem{Collaborated with stakeholders to define clear deliverables and timelines, ensuring the project stayed on track and met quality standards.}
+      \resumeItem{Fostered a collaborative environment by encouraging knowledge sharing and establishing best practices for Rust and DataFusion development.}
+      \resumeItemListEnd
+      \resumeTech{Technologies}{Rust, Apache DataFusion, AWS, Kubernetes, Terraform, Docker, Python}\\
+
+      \resumeSubheading
       {Spice.ai}{Seattle, Washington (Remote)}
       {Senior Engineer}{September 2024 - November 2024}
       \resumeItemListStart
-      \resumeItem{Contributed to the development and enhancement of the Spice.ai open-source product, focusing on integrating key functionality to improve usability and extend product capabilities.}
-      \resumeItem{Authored comprehensive technical documentation, including API references and deployment guides, to support developer adoption and streamline product onboarding.}
-      \resumeItem{Created and recorded instructional video content, explaining core product features, configuration steps, and usage scenarios to enhance user experience and facilitate knowledge transfer within the developer community.}
+      \resumeItem{Enhanced the open-source Spice.ai product, focusing on core data pipeline optimizations.}
+      \resumeItem{Implemented new key features and optimizations in the Spice.ai product, improving performance and usability.}
+      \resumeItem{Authored API references and deployment guides to streamline the integration of Spice.ai into existing data systems.}
+      \resumeItem{Produced instructional content to educate developers on deploying and using data-intensive applications.}
       \resumeItem{Utilized core design principles to guide content creation, ensuring that all resources provide actionable insights and adhere to Spice.ai's strategic goals and technical standards}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Rust, Apache DataFusion, Spark, AWS, Azure, Data Catalogs, Axum, Kubernetes}\\
-
-    \sepsection
+      \resumeTech{Technologies}{Rust, Apache DataFusion, Spark, AWS, Azure, Axum, Kubernetes, Data Catalogs, DuckDB}\\
 
     \resumeSubheading
       {Prophecy.io}{Seattle, Washington (Remote)}
       {Staff Data Engineer}{April 2022 - September 2024}
       \resumeItemListStart
-      \resumeItem{Drove the development of customer data pipelines using our product}
-      \resumeItem{Contributed to the code generation aspect of the product}
-      \resumeItem{Built dozens of custom reusable code components for customers and internal projects}
-      \resumeItem{Built out the first and subsequent versions of the Product documentation}
-      \resumeItem{Worked with customers to migrate existing legacy ETL projects to a more modern Big Data ecosystem}
-      \resumeItem{Helped create best Data Engineering practices both internally and with customers}
+      \resumeItem{Designed and developed modern data pipelines for enterprise-scale big data ecosystems.}
+      \resumeItem{Built reusable, production-grade components to accelerate data pipeline development.}
+      \resumeItem{Migrated complex legacy ETL systems to robust, modern architectures using tools like Databricks, S3 and Azure Data Lake.}
+      \resumeItem{Established best practices for Data Engineering workflows with customers, integrating CI/CD for data infrastructure.}
+      \resumeItem{Worked with customers to migrate existing legacy ETL projects to more modern Big Data ecosystems}
+      \resumeItem{Created best Data Engineering practice guidelines both internally and with customers}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Databricks, Scala, Spark, Terraform, Kubernetes, Azure Data Factory, Azure Data Lake}\\
-    
-    \sepsection
+      \resumeTech{Technologies}{Python, SQL, Databricks, Scala, Spark, Terraform, Azure Data Factory, Azure Data Lake, Kubernetes, Data Catalogs}\\
 
     \resumeSubheading
       {Microsoft - Consumer Software Engineering (CSE)}{Redmond, Washington}
@@ -158,35 +167,33 @@
       \resumeItem{Responsible for educating customers and field-oriented developers on industry trends related to Big Data.}
       \resumeItem{Collected feedback from field teams, triaged it and reported it back to Product groups}
       \resumeItem{Worked closely as part of the Azure Databricks feedback loop to expedite customer issues and drive product planning based on industry trends}
-      \resumeItem{Converted R scripts to SparkR and encapsulated them for execution through Azure Data Factory (H\&M)}
       \resumeItem{Designed Data Architecture and built the initial Spark Streaming version of near-realtime ML models (Energinet)}
       \resumeItem{Wrote benchmarking tests dealing with handling encrypted files in a Big Data pipeline (Walgreens)}
       \resumeItem{Wrote initial Spark/HBase implementation for distributed event handling through Event Grid (AT\&T)}
-      \resumeItem{Served as an emergency consult on scripting and validating HDInsight cluster deployments (Credit Suisse)}
+      \resumeItem{Served as an emergency consultant on scripting and validating HDInsight cluster deployments (Credit Suisse)}
       \resumeItem{Helped port \href{https://github.com/feast-dev/feast}{Feast}(https://github.com/feast-dev/feast) to run on Azure Databricks}
       \resumeItem{Did design reviews for large-scale data warehousing scenarios (Kroger)}
       \resumeItem{Built the infrastructure deployment automation for the CSE Kafka on-boarding event using Terraform and Kafka}
       \resumeItem{Wrote benchmarking tools to test CosmosDB's Cassandra offering}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Azure Databricks, Scala, Spark, Terraform, Docker, Cassandra, Kubernetes, Azure Data Factory, EventHubs, Kafka, Azure Data Lake, Azure HDInsight, Azure CosmosDB}\\
+      \resumeTech{Technologies}{Python, SQL, Azure Databricks, Scala, Spark, Terraform, Docker, Cassandra, Kubernetes, Azure Data Factory, EventHubs, Kafka, Azure Data Lake, Azure HDInsight, Azure CosmosDB}\\
       
     \sepsection
+
+    \newpage
 
     \resumeSubheading
       {Microsoft - Customer Advisory Team (CAT/DataCAT)}{Redmond, Washington}
       {Software Engineer 2}{September 2015 - August 2018}
       \resumeItemListStart
-      \resumeItem{Worked as an OSS Data specialist}
-      \resumeItem{Worked with customers to unblock technical issues, provide best practices}
+      \resumeItem{Modernized legacy SQL pipelines by transitioning to Spark/Hadoop, achieving significant cost and performance benefits.}
+      \resumeItem{Led design reviews for customer ETL and OLTP workflows, optimizing architectures for scale and efficiency.}
       \resumeItem{Lead a team to convert a legacy SQL pipeline to Spark/Hadoop, reducing hardware cost by 80\% and runtime by 96\% }
-      \resumeItem{Did design reviews with customers to provide optimal performance for a variety of ETL/OLTP scenarios}
-      \resumeItem{Helped plan and automate data gathering for internal project that lead to key design decisions in ADLS Gen 2 (Hierarchical Namespaces)}
-      \resumeItem{Wrote and iterated on Large-scale GDPR-enabled IoT Streaming project using Spark, EventHubs and Akka}
-      \resumeItem{Worked closely with EventHubs product group to rewrite Spark drivers for best performance and developer experience}
+      \resumeItem{Helped plan an internal project that lead to key design decisions in ADLS Gen 2 (Hierarchical Namespaces)}
+      \resumeItem{Delivered GDPR-compliant IoT streaming architectures with Spark, EventHubs, and Akka.}
+      \resumeItem{Partnered with product teams to enhance EventHubs Spark driver performance, enabling higher throughput data processing.}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Scala, Azure Databricks, Hadoop, Yarn, Azure HDInsight, Azure CosmosDB, Kubernetes, EventHubs, Airflow, MongoDB.}\\
-    
-    \sepsection
+      \resumeTech{Technologies}{Python, SQL, Scala, Azure Databricks, Hadoop, Yarn, Azure HDInsight, Azure CosmosDB, Kubernetes, EventHubs, Airflow, MongoDB.}\\
 
     \resumeSubheading
       {Microsoft - Compute Insights Team}{Redmond, Washington}
@@ -196,18 +203,18 @@
       \resumeItem{Built data visualization tools based on insights from low-level hardware metrics}
       \resumeItem{Wrote introductory courses on OSS Big Data concepts, notebooks and Hadoop for my team}
       \resumeItemListEnd
-      \resumeTech{Technologies}{Python, Scala, F\#, C\#, Hadoop, HDInsight, D3.}\\
+      \resumeTech{Technologies}{Python, Scala, F\#, C\#, Hadoop, HDInsight, D3.js}\\
 
     %   \resumeTech{Theory}{Artificial intelligence, Data science and Data mining.}
 
     \resumeSubHeadingListEnd
 % ---
-\newpage
+
 % PROGRAMMING SKILLS
 \section{Technical skills}
   \resumeSubHeadingListStart
   
-  \resumeSubItem{\textbf{Programming languages:} Python, Scala, Rust, F\#/.NET, JavaScript/Node}
+  \resumeSubItem{\textbf{Programming languages:} Python, SQL, Java, Scala, Rust, F\#/.NET, JavaScript/Node}
   
   \resumeSubItem{\textbf{Cloud services:} Azure, GCP}
   
